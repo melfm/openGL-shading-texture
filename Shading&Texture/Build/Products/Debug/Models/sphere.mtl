@@ -1,0 +1,12 @@
+# Blender MTL File: 'sphere.blend'
+# Material Count: 1
+
+newmtl Material.001
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.297297 0.297297 0.297297
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/melissamozifian/Documents/4thYearMaterial/CS4102-CG/Practical4/Shading&Texture/Texture/metal.jpg

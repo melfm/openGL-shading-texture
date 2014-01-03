@@ -1,0 +1,38 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.0 6.0.0.5908 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl horse1
+Ka 0.4 0.4 0.4
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 39.3966
+map_Kd npc_horse4.tga
+map_bump npc_horse_normal.tga
+bump npc_horse_normal.tga
+map_opacity npc_horse4.tga
+map_d npc_horse4.tga
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl horse
+Ka 0.4 0.4 0.4
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 55.7152
+map_Kd npc_horse4.tga
+map_bump npc_horse_normal.tga
+bump npc_horse_normal.tga
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

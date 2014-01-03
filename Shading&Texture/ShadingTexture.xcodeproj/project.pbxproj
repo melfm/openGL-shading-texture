@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D2103311831708F0091568F /* SOIL.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D21032D1831708F0091568F /* SOIL.o */; };
+		8D2103321831708F0091568F /* image_DXT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D21032E1831708F0091568F /* image_DXT.o */; };
+		8D2103331831708F0091568F /* stb_image_aug.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D21032F1831708F0091568F /* stb_image_aug.o */; };
+		8D2103341831708F0091568F /* image_helper.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2103301831708F0091568F /* image_helper.o */; };
+		8D78D794182A509F00A2EBEE /* ShadingTexture.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D78D793182A509F00A2EBEE /* ShadingTexture.1 */; };
+		8D78D798182A50B100A2EBEE /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D78D788182A4E4300A2EBEE /* model.cpp */; };
+		8D78D799182A50B700A2EBEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D78D7051819A61500A2EBEE /* Cocoa.framework */; };
+		8D78D79A182A50B700A2EBEE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D78D7031819A5E700A2EBEE /* OpenGL.framework */; };
+		8D78D79B182A50B700A2EBEE /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D78D7021819A5E700A2EBEE /* GLUT.framework */; };
+		8DC9F79F183D05C10025D3CC /* objectModel.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9F78C183AB0860025D3CC /* objectModel.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D78D78D182A509F00A2EBEE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 6;
+			files = (
+				8D78D794182A509F00A2EBEE /* ShadingTexture.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8D21032618316A210091568F /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOIL.h; path = "../../../../../../Downloads/VC-Desktop-Lesson06/SOIL.h"; sourceTree = "<group>"; };
+		8D21032B18316F090091568F /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = "../../../../../Downloads/Simple OpenGL Image Library/lib/libSOIL.a"; sourceTree = "<group>"; };
+		8D21032D1831708F0091568F /* SOIL.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = SOIL.o; path = "../../../../../Downloads/Simple OpenGL Image Library/projects/makefile/obj/SOIL.o"; sourceTree = "<group>"; };
+		8D21032E1831708F0091568F /* image_DXT.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = image_DXT.o; path = "../../../../../Downloads/Simple OpenGL Image Library/projects/makefile/obj/image_DXT.o"; sourceTree = "<group>"; };
+		8D21032F1831708F0091568F /* stb_image_aug.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = stb_image_aug.o; path = "../../../../../Downloads/Simple OpenGL Image Library/projects/makefile/obj/stb_image_aug.o"; sourceTree = "<group>"; };
+		8D2103301831708F0091568F /* image_helper.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = image_helper.o; path = "../../../../../Downloads/Simple OpenGL Image Library/projects/makefile/obj/image_helper.o"; sourceTree = "<group>"; };
+		8D210368183A66B90091568F /* angel.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = angel.mtl; path = ../Models/angel.mtl; sourceTree = "<group>"; };
+		8D210369183A66B90091568F /* angel.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = angel.obj; path = ../Models/angel.obj; sourceTree = "<group>"; };
+		8D21036A183A66B90091568F /* cone.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cone.mtl; path = ../Models/cone.mtl; sourceTree = "<group>"; };
+		8D21036B183A66B90091568F /* cone.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cone.obj; path = ../Models/cone.obj; sourceTree = "<group>"; };
+		8D21036C183A66B90091568F /* cube.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.mtl; path = ../Models/cube.mtl; sourceTree = "<group>"; };
+		8D21036D183A66B90091568F /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.obj; path = ../Models/cube.obj; sourceTree = "<group>"; };
+		8D21036E183A66B90091568F /* cylinder.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cylinder.mtl; path = ../Models/cylinder.mtl; sourceTree = "<group>"; };
+		8D21036F183A66B90091568F /* cylinder.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cylinder.obj; path = ../Models/cylinder.obj; sourceTree = "<group>"; };
+		8D210370183A66B90091568F /* ground.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ground.mtl; path = ../Models/ground.mtl; sourceTree = "<group>"; };
+		8D210371183A66B90091568F /* ground.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ground.obj; path = ../Models/ground.obj; sourceTree = "<group>"; };
+		8D210372183A66B90091568F /* sphere.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sphere.mtl; path = ../Models/sphere.mtl; sourceTree = "<group>"; };
+		8D210373183A66B90091568F /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sphere.obj; path = ../Models/sphere.obj; sourceTree = "<group>"; };
+		8D210374183A66B90091568F /* wall1.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wall1.mtl; path = ../Models/wall1.mtl; sourceTree = "<group>"; };
+		8D210375183A66B90091568F /* wall1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wall1.obj; path = ../Models/wall1.obj; sourceTree = "<group>"; };
+		8D210376183A66B90091568F /* wall2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wall2.mtl; path = ../Models/wall2.mtl; sourceTree = "<group>"; };
+		8D210377183A66B90091568F /* wall2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wall2.obj; path = ../Models/wall2.obj; sourceTree = "<group>"; };
+		8D2103C0183A6DF10091568F /* bricks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks.jpg; sourceTree = "<group>"; };
+		8D2103C1183A6DF10091568F /* coneTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coneTexture.jpg; sourceTree = "<group>"; };
+		8D2103C2183A6DF10091568F /* cubeTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cubeTexture.jpg; sourceTree = "<group>"; };
+		8D2103C3183A6DF10091568F /* darkMarble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkMarble.jpg; sourceTree = "<group>"; };
+		8D2103C4183A6DF10091568F /* graybricks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graybricks.jpg; sourceTree = "<group>"; };
+		8D2103C5183A6DF10091568F /* marbleTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marbleTexture.jpg; sourceTree = "<group>"; };
+		8D2103C6183A6DF10091568F /* marbleTexture2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marbleTexture2.jpg; sourceTree = "<group>"; };
+		8D2103C7183A6DF10091568F /* metal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metal.jpg; sourceTree = "<group>"; };
+		8D2103C8183A6DF10091568F /* pinkchalk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkchalk.jpg; sourceTree = "<group>"; };
+		8D2103C9183A6DF10091568F /* sand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sand.jpg; sourceTree = "<group>"; };
+		8D2103CA183A6DF10091568F /* stone1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stone1.jpg; sourceTree = "<group>"; };
+		8D2103CB183A6DF10091568F /* tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tree.jpg; sourceTree = "<group>"; };
+		8D2103CC183A6DF10091568F /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
+		8D2103CD183A6DF10091568F /* wooden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wooden.jpg; sourceTree = "<group>"; };
+		8D78D7021819A5E700A2EBEE /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		8D78D7031819A5E700A2EBEE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		8D78D7051819A61500A2EBEE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		8D78D788182A4E4300A2EBEE /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = model.cpp; path = ../SquareShift/model.cpp; sourceTree = "<group>"; };
+		8D78D789182A4E4300A2EBEE /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = model.h; path = ../SquareShift/model.h; sourceTree = "<group>"; };
+		8D78D78F182A509F00A2EBEE /* ShadingTexture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShadingTexture; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D78D793182A509F00A2EBEE /* ShadingTexture.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ShadingTexture.1; sourceTree = "<group>"; };
+		8DC9F78C183AB0860025D3CC /* objectModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = objectModel.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D78D78C182A509F00A2EBEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D78D799182A50B700A2EBEE /* Cocoa.framework in Frameworks */,
+				8D78D79A182A50B700A2EBEE /* OpenGL.framework in Frameworks */,
+				8D78D79B182A50B700A2EBEE /* GLUT.framework in Frameworks */,
+				8D2103311831708F0091568F /* SOIL.o in Frameworks */,
+				8D2103321831708F0091568F /* image_DXT.o in Frameworks */,
+				8D2103331831708F0091568F /* stb_image_aug.o in Frameworks */,
+				8D2103341831708F0091568F /* image_helper.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D210335183170B50091568F /* SOIL */ = {
+			isa = PBXGroup;
+			children = (
+				8D21032B18316F090091568F /* libSOIL.a */,
+				8D2103301831708F0091568F /* image_helper.o */,
+				8D21032F1831708F0091568F /* stb_image_aug.o */,
+				8D21032E1831708F0091568F /* image_DXT.o */,
+				8D21032D1831708F0091568F /* SOIL.o */,
+			);
+			name = SOIL;
+			sourceTree = "<group>";
+		};
+		8D210367183A669A0091568F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D210368183A66B90091568F /* angel.mtl */,
+				8D210369183A66B90091568F /* angel.obj */,
+				8D21036A183A66B90091568F /* cone.mtl */,
+				8D21036B183A66B90091568F /* cone.obj */,
+				8D21036C183A66B90091568F /* cube.mtl */,
+				8D21036D183A66B90091568F /* cube.obj */,
+				8D21036E183A66B90091568F /* cylinder.mtl */,
+				8D21036F183A66B90091568F /* cylinder.obj */,
+				8D210370183A66B90091568F /* ground.mtl */,
+				8D210371183A66B90091568F /* ground.obj */,
+				8D210372183A66B90091568F /* sphere.mtl */,
+				8D210373183A66B90091568F /* sphere.obj */,
+				8D210374183A66B90091568F /* wall1.mtl */,
+				8D210375183A66B90091568F /* wall1.obj */,
+				8D210376183A66B90091568F /* wall2.mtl */,
+				8D210377183A66B90091568F /* wall2.obj */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8D2103BF183A6DF10091568F /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				8D2103C0183A6DF10091568F /* bricks.jpg */,
+				8D2103C1183A6DF10091568F /* coneTexture.jpg */,
+				8D2103C2183A6DF10091568F /* cubeTexture.jpg */,
+				8D2103C3183A6DF10091568F /* darkMarble.jpg */,
+				8D2103C4183A6DF10091568F /* graybricks.jpg */,
+				8D2103C5183A6DF10091568F /* marbleTexture.jpg */,
+				8D2103C6183A6DF10091568F /* marbleTexture2.jpg */,
+				8D2103C7183A6DF10091568F /* metal.jpg */,
+				8D2103C8183A6DF10091568F /* pinkchalk.jpg */,
+				8D2103C9183A6DF10091568F /* sand.jpg */,
+				8D2103CA183A6DF10091568F /* stone1.jpg */,
+				8D2103CB183A6DF10091568F /* tree.jpg */,
+				8D2103CC183A6DF10091568F /* white.jpg */,
+				8D2103CD183A6DF10091568F /* wooden.jpg */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		8D78D6FB1819A55D00A2EBEE = {
+			isa = PBXGroup;
+			children = (
+				8D2103BF183A6DF10091568F /* Texture */,
+				8D210367183A669A0091568F /* Models */,
+				8D210335183170B50091568F /* SOIL */,
+				8D78D790182A509F00A2EBEE /* ShadingTexture */,
+				8D78D7041819A5FD00A2EBEE /* Frameworks */,
+				8D78D70E1819A68400A2EBEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D78D7041819A5FD00A2EBEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D78D7051819A61500A2EBEE /* Cocoa.framework */,
+				8D78D7031819A5E700A2EBEE /* OpenGL.framework */,
+				8D78D7021819A5E700A2EBEE /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D78D70E1819A68400A2EBEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D78D78F182A509F00A2EBEE /* ShadingTexture */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D78D790182A509F00A2EBEE /* ShadingTexture */ = {
+			isa = PBXGroup;
+			children = (
+				8D78D788182A4E4300A2EBEE /* model.cpp */,
+				8D78D789182A4E4300A2EBEE /* model.h */,
+				8DC9F78C183AB0860025D3CC /* objectModel.hpp */,
+				8D21032618316A210091568F /* SOIL.h */,
+				8D78D793182A509F00A2EBEE /* ShadingTexture.1 */,
+			);
+			path = ShadingTexture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D78D78E182A509F00A2EBEE /* ShadingTexture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D78D795182A509F00A2EBEE /* Build configuration list for PBXNativeTarget "ShadingTexture" */;
+			buildPhases = (
+				8D78D78B182A509F00A2EBEE /* Sources */,
+				8D78D78C182A509F00A2EBEE /* Frameworks */,
+				8D78D78D182A509F00A2EBEE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShadingTexture;
+			productName = ShadingTexture;
+			productReference = 8D78D78F182A509F00A2EBEE /* ShadingTexture */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D78D6FC1819A55D00A2EBEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 8D78D6FF1819A55D00A2EBEE /* Build configuration list for PBXProject "ShadingTexture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8D78D6FB1819A55D00A2EBEE;
+			productRefGroup = 8D78D70E1819A68400A2EBEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D78D78E182A509F00A2EBEE /* ShadingTexture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D78D78B182A509F00A2EBEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D78D798182A50B100A2EBEE /* model.cpp in Sources */,
+				8DC9F79F183D05C10025D3CC /* objectModel.hpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8D78D7001819A55D00A2EBEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8D78D7011819A55D00A2EBEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		8D78D796182A509F00A2EBEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Downloads/VC-Desktop-Lesson06\"",
+					"\"$(SRCROOT)/../../../../../Downloads/Simple OpenGL Image Library/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D78D797182A509F00A2EBEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Downloads/VC-Desktop-Lesson06\"",
+					"\"$(SRCROOT)/../../../../../Downloads/Simple OpenGL Image Library/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D78D6FF1819A55D00A2EBEE /* Build configuration list for PBXProject "ShadingTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D78D7001819A55D00A2EBEE /* Debug */,
+				8D78D7011819A55D00A2EBEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D78D795182A509F00A2EBEE /* Build configuration list for PBXNativeTarget "ShadingTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D78D796182A509F00A2EBEE /* Debug */,
+				8D78D797182A509F00A2EBEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D78D6FC1819A55D00A2EBEE /* Project object */;
+}
